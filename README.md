@@ -5,7 +5,7 @@
 ![reward](https://make.fun/badge/u-jackxyz72-pump-fun-replay-sprint-paper-bot-0b809122/Ritwan007/pumpfun-replay-dip-bot/reward.svg)
 
 A paper-trading bot for the make.fun competition
-[Pump.fun Replay Sprint — Paper Bot, Real Ranking](https://make.fun/c/u-jackxyz72-pump-fun-replay-sprint-paper-bot-0b809122):
+[Pump.fun Replay Sprint — Paper Bot, Real Ranking](https://make.fun/bounty/u-jackxyz72-pump-fun-replay-sprint-paper-bot-0b809122):
 it trades 10 SOL of paper money on a 24-hour replay of pump.fun bonding-curve
 tape, speaking agent-fun/replay/v2. Nothing is traded for real.
 

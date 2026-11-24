@@ -27,6 +27,22 @@ Cost sensitivity on draw 0: no failed txs +0.3285; **at 2× fees +0.0817** —
 still positive. Guardrails on the full window: 51–54 distinct trip mints
 (bar: 20), max drawdown ~3% (bar: ≤ 50%).
 
+Official `grade-local` (the server's own intake, process driver) on the
+shipped commit agrees with the simulator: **net PnL +0.3371 SOL** (return
++3.37%), net without the top-3 coins **+0.0890 SOL**, at 2× fees +0.0994,
+53 distinct mints, max drawdown 0.0296, and the two executions reproduced
+byte for byte.
+
+Honest caveat — `grade-local --stress`: of the first 11 of 20 resampled
+copies (the local run was cut off there), 4 finished positive (+0.02…+0.19)
+and 7 negative (−0.11…−0.50), median ≈ −0.15. Block resampling scrambles
+the 1,200-slot trend windows this strategy reads, so the copies punish it
+structurally; still, they say plainly that the dev score leans on this
+window's chronological order, and the final window is a fresh 24 h of tape
+where the same shape may or may not repeat. The entry is free and the
+measured dev result is positive on every chronological test we ran; that
+is the basis it ships on, not a promise about the final window.
+
 Per-slice (parts are consecutive time slices of the same window; positions
 and tape state do not carry across a slice boundary in these runs, so the
 slices understate the full-window run): dip default +0.139 / −0.271 /
